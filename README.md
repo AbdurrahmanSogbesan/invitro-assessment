@@ -1,54 +1,111 @@
-# React + TypeScript + Vite
+# Doctor Booking Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A fully responsive and accessible appointment booking UI for a healthcare platform. This application allows users to browse doctors, book appointments, and manage their bookings.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 👨‍⚕️ Doctor Directory with filtering by specialty and availability
+- 📅 Interactive booking modal with time slot selection
+- 📋 Appointments summary view
+- 🎨 Modern UI with Tailwind CSS
+- ♿ Fully accessible components
+- 📱 Responsive design for all devices
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- React 19
+- TypeScript
+- Tailwind CSS
+- Radix UI (for accessible components)
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## Getting Started
+
+### Prerequisites
+
+- Node.js (v18 or higher)
+- Yarn package manager
+
+### Installation
+
+1. Clone the repository:
+
+```bash
+git clone [your-repo-url]
+cd doctor-booking-mock
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+2. Install dependencies:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+```bash
+yarn install
 ```
+
+3. Start the development server:
+
+```bash
+yarn dev
+```
+
+The application will be available at `http://localhost:5173`
+
+## AI Tools Usage
+
+This project was developed with the assistance of various AI tools to enhance development efficiency:
+
+1. **Cursor IDE**
+
+   - Used for code scaffolding
+   - Component structure suggestions
+   - Type definitions
+
+2. **ChatGPT**
+   - Helped with UI/UX decisions
+   - Provided best practices for component architecture
+
+## Project Structure
+
+```
+src/
+  ├── components/         # React components
+  │   ├── booking/       # Booking-related components
+  │   └── ui/           # Reusable UI components
+  ├── lib/              # Utilities and helpers
+  └── types/            # TypeScript type definitions
+```
+
+## Known Limitations & Future Improvements
+
+1. **Current Limitations**
+
+   - Mock data only - no backend integration
+   - Limited filtering options
+   - Basic appointment management
+
+2. **Planned Improvements**
+   - Backend integration
+   - Advanced search and filtering
+   - Appointment notifications
+   - Calendar integration
+   - More comprehensive test coverage
+
+## Accessibility
+
+The application follows WCAG guidelines and implements the following accessibility features:
+
+- Proper ARIA labels and roles
+- Keyboard navigation support
+- Screen reader friendly
+- Color contrast compliance
+- Focus management
+
+## Contributing
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details
