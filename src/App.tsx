@@ -5,7 +5,7 @@ import { Toaster } from "./components/ui/sonner";
 
 export function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={import.meta.env.BASE_URL || "/"}>
       <AppRoutes />
       <Toaster />
     </BrowserRouter>

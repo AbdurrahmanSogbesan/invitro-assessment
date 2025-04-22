@@ -99,7 +99,7 @@ export default function MainLayout() {
                 <Button variant="ghost" size="icon" className="rounded-full">
                   <Avatar>
                     <AvatarImage
-                      src="/public/person.jpg"
+                      src={`${import.meta.env.BASE_URL}person.jpg`}
                       className="object-cover"
                     />
                     <AvatarFallback>JD</AvatarFallback>
@@ -142,7 +142,7 @@ export default function MainLayout() {
                 <div className="flex items-center gap-3 mb-6 p-2">
                   <Avatar>
                     <AvatarImage
-                      src="/public/person.jpg"
+                      src={`${import.meta.env.BASE_URL}person.jpg`}
                       className="object-cover"
                     />
                     <AvatarFallback>JD</AvatarFallback>
