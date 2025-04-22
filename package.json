@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.1",
   "type": "module",
-  "homepage": "https://AbdurrahmanSogbesan.github.io/invitro-assessment/",
+  "homepage": "https://abdurrahmansogbesan.github.io/invitro-assessment/",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
