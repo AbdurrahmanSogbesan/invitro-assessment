@@ -30,7 +30,7 @@ A fully responsive and accessible appointment booking UI for a healthcare platfo
 1. Clone the repository:
 
 ```bash
-git clone [your-repo-url]
+git clone https://github.com/AbdurrahmanSogbesan/invitro-assessment.git
 cd doctor-booking-mock
 ```
 
@@ -106,6 +106,3 @@ The application follows WCAG guidelines and implements the following accessibili
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details
